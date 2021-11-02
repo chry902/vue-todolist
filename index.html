@@ -19,9 +19,9 @@
             <div class="m-auto d-flex flex-column ">
                 <img class="logo m-auto " :src="image" alt="">
 
-                <div class="addTasks d-flex justify-content-center mt-3 mb-4">
-                    <input  name="Nuovo" type="tex"   v-model="newTask" @keyup.enter="submit" >
-                    <button class="button " @click="addTask">Aggiungi</button>
+                <div class="addTasks ">
+                    <input   type="tex"   v-model="newTask" v-on:keyup.enter="addTask">
+                    <button class="button " @click="addTask" >Aggiungi</button>
                     <div class="error" v-show="error">Devi inserire un valore</div>
                 </div>
 
@@ -40,7 +40,7 @@
                     </div>
             
                     <div v-else>
-                        <p>inserire elemento valido</p>
+                        <p>Nessun elemento inserito</p>
                     </div>
                 </div>
             </div>

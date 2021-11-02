@@ -18,10 +18,10 @@
 
 .logo{
     width: 250px;
-    
+
 }
 .addTasks{
-    
+    margin: 2rem auto;
 }
 
 input, button{
@@ -35,6 +35,7 @@ input{
     margin-right: 10px;
 }
 button{
+    padding: 6.3px;
     width: 100px;
     color: rgb(146, 145, 145);
     background-color: rgba(245, 247, 247, 1);
