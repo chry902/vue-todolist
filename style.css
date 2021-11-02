@@ -6,7 +6,34 @@
 
 
 
-.container{
-    width: 300px;
-    background-color: antiquewhite;
+.contain{
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 500px;
+    
+    
+}
+
+
+.logo{
+    width: 250px;
+    justify-content: center;
+}
+
+input, button{
+    
+    border-radius: 8px;
+    padding: 0.2rem;
+}
+input{
+    width: 350px;
+}
+button{
+    width: 100px;
+}
+
+.text_contain{
+    background-color: aquamarine;
+    border-radius: 10px;
 }

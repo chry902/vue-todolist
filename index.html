@@ -15,30 +15,37 @@
 
     <div id="app">
 
-
-
-        <div class="addTasks">
-            <input type="text" v-model="newTask" @keyup.enter="">
-            <button @click="addTask">Add</button>
-            <div class="error" v-show="error">Devi inserire un valore</div>
-        </div>
-
-        <div class="tasks" v-if="tasks.length > 0">
-            <div class="item" v-for="(task, index) in tasks">
-                {{task}}
-                <div class="delet_task">
-                    <i class="fas fa-times-circle fa-lg fa-fw
-                    " @click="removeTask(index)"></i>
+        <div class="contain d-flex ">
+            <img class="logo m-auto " :src="image" alt="">
+            <div class="addTasks d-flex justify-content-around mt-3 mb-4">
+                <input  name="Nuovo" type="tex" value="qui il tuo testo"  v-model="newTask" @keyup.enter="" >
+                <button class="button " @click="addTask">Aggiungi</button>
+                <div class="error" v-show="error">Devi inserire un valore</div>
+            </div>
+            <div class="text_contain p-4 w-100">
+                
+               
+        
+                <div class="tasks" v-if="tasks.length > 0">
+                    <div class="item d-flex justify-content-between" v-for="(task, index) in tasks">
+                        {{task}}
+                        <div class="delet_task">
+                            <i class="fas fa-times-circle fa-lg fa-fw
+                            " @click="removeTask(index)"></i>
+                        </div>
+                    </div>
+        
+                   
+        
+                </div>
+        
+                <div v-else>
+                    <p>inserire elemento valido</p>
                 </div>
             </div>
-
-           
-
+       
         </div>
 
-        <div v-else>
-            <p>inserire elemento valido</p>
-        </div>
 
 
 
