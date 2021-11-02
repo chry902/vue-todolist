@@ -17,9 +17,9 @@ const app = new Vue({
         //nuva task
         newTask: ``,
         tasks: [
-            `andare a lavoro`,
-            `andare in palestra`,
-            `imparare vuejs`,
+            `Andare a lavoro`,
+            `Andare in palestra`,
+            `Imparare vuejs`,
         ],
         error: false,
     },

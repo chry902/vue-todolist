@@ -7,7 +7,7 @@
 
 
 .contain{
-    display:flex;
+    
     flex-wrap: wrap;
     margin: auto;
     width: 500px;
@@ -18,7 +18,10 @@
 
 .logo{
     width: 250px;
-    justify-content: center;
+    
+}
+.addTasks{
+    
 }
 
 input, button{
@@ -26,14 +29,26 @@ input, button{
     border-radius: 8px;
     padding: 0.2rem;
 }
+
 input{
-    width: 350px;
+    width: 320px;
+    margin-right: 10px;
 }
 button{
     width: 100px;
+    color: rgb(146, 145, 145);
+    background-color: rgba(245, 247, 247, 1);
+    font-size: 13px;
 }
 
 .text_contain{
-    background-color: aquamarine;
+    background-color: rgba(245, 247, 247, 1);
     border-radius: 10px;
+}
+
+.item{
+    
+    font-size: 13px;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid lightgray;
 }
