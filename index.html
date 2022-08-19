@@ -18,7 +18,10 @@
         <div class="contain mt-5 ">
             <div class="m-auto d-flex flex-column ">
                 <!-- <img class="logo m-auto " :src="image" alt=""> -->
-                <h1 class="title">Todolist</h1>
+                <div class="title_container ">
+                    <h1 class="title">Todolist</h1>
+
+                </div>
 
                 <div class="addTasks ">
                     <input   type="tex"   v-model="newTask" v-on:keyup.enter="addTask">
